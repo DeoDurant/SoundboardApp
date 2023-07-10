@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <!-- This is an ImageView that sets the icon at the top. -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="144dp"
+        android:layout_height="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/soundboardicon" />
+
+    <!-- This is a TextView that sets a title. -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Register an account"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserratregular"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <!-- This is an EditText that asks for an Email. -->
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/text_title"
+        android:layout_marginBottom="20dp"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="15dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"/>
+
+    <!-- These use TextInputLayout and TextInputEditText to
+     create basic security for the password. -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/register_password"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register_email"
+        android:layout_marginBottom="20dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="15dp"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- These use TextInputLayout and TextInputEditText to
+     create basic security for the confirmation password. -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/register_confPassword"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register_password"
+        android:layout_marginBottom="20dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="15dp"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- These is a button to register a user. -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_confPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:layout_marginBottom="20dp" />
+
+    <!-- This is a TextView that links to the login page. -->
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserratregular"
+        android:text="Have an account? Click here to login!"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

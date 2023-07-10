@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <!-- This is an ImageView that sets the icon at the top. -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="144dp"
+        android:layout_height="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/soundboardicon" />
+
+    <!-- This is a TextView that sets a title. -->
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserratregular"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageView"/>
+
+    <!-- This is an EditText that prompts for an Email. -->
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/text_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="15dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="Email"
+        android:background="@drawable/custom_input"/>
+
+    <!-- These use TextInputLayout and TextInputEditText to
+     create basic security for the password. -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/login_password"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_email"
+        android:layout_marginBottom="20dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="15dp"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- These is a button to register a user. -->
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- A TextView that links the user to the Register page. -->
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:fontFamily="@font/montserratregular"
+        android:textColor="@color/white"
+        android:text="Don't have an account? Click here to register!"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

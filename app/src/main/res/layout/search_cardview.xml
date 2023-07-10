@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/tv_options"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="&#8942;"
+        android:textSize="30sp"
+        android:layout_gravity="right"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_soundPlay"
+            android:text="Play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:id="@+id/btn_soundPause"
+            android:text="Pause"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/txtView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:fontFamily="@font/montserratregular"
+                />
+
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtView_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:text="URL"
+                android:fontFamily="@font/montserratregular"
+                />
+
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btn_playPause"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgView_playingIcon"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"/>-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/text_description"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textSize="24dp"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:text="Description"-->
+            <!--                android:fontFamily="@font/montserratregular"-->
+            <!--                />-->
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            >-->
+        <!--            <ImageButton-->
+        <!--                android:id="@+id/imgButton_edit"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:src="@drawable/ic_baseline_edit_24"-->
+        <!--                />-->
+
+        <!--            <ImageButton-->
+        <!--                android:id="@+id/imgButton_delete"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:src="@drawable/ic_baseline_delete_24"-->
+        <!--                />-->
+        <!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "68892201084",
+    "project_id": "soundboard-8ddb0",
+    "storage_bucket": "soundboard-8ddb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68892201084:android:b316c16deaac4d706c79f9",
+        "android_client_info": {
+          "package_name": "com.example.soundboardapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68892201084-0pc33ehtar780jkfgbb649q87l3s806l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.soundboardapp",
+            "certificate_hash": "8dc114e5643bb13bbb82b1ba1890b26c8aeefce3"
+          }
+        },
+        {
+          "client_id": "68892201084-fi9hqr2u3emsqnunn2nc9q95pamjnpmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_n348xYuuwEOIhXPm4VboVk6f4eoHmEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68892201084-fi9hqr2u3emsqnunn2nc9q95pamjnpmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
