@@ -8,6 +8,7 @@ Also used with Firebase to handle all authentication and database related matter
 
 Here is the login/signup page, complete with basic checks such as valid email, strong password, show/hide password.
 As a user does a login the app will check if the user exists and allow entry. Likewise, with a signup, it will check if that user has already existed.
+
 ![studio64_MDAiHUMSYG](https://github.com/DeoDurant/SoundboardApp/assets/83045996/52890b00-e272-43fb-9ce5-edb94d576069)
 ![studio64_BL41MuNqnb](https://github.com/DeoDurant/SoundboardApp/assets/83045996/89d91803-b82a-456d-be38-bf10fd062fa0)
 
